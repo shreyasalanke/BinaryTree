@@ -1,7 +1,9 @@
 package com.bridgelabz;
 
-public class MyBinaryTreeTest {
-	public static void main(String[] args) {
+public class MyBinaryTreeTest 
+  {
+	public static void main(String[] args)
+	{
 		MyBinaryTree mbt = new MyBinaryTree();  
         mbt.insert(56);  
         mbt.insert(30);  
@@ -19,4 +21,4 @@ public class MyBinaryTreeTest {
         mbt.inorder(mbt.root);
 	}
 
-}
+   }
