@@ -3,37 +3,42 @@ package com.bridgelabz;
 import java.util.*;
 import java.io.*;
 
-public class MyBinaryTree {
+public class MyBinaryTree 
+{
  Node root;
  
- public void insert(int data) {  
+ public void insert(int data) 
+ {  
     
      Node newNode = new Node(data);  
 
        
-     if(root == null){  
+     if(root == null)
+       {  
          root = newNode;  
          return;  
        }  
-     else {  
-        
+     else
+       {     
          Node current = root, parent = null;  
 
-         while(true) {  
-             
+         while(true) 
+         {              
              parent = current;  
-
-             if(data < current.data) {  
+             if(data < current.data) 
+             {  
                  current = current.left;  
-                 if(current == null) {  
+                 if(current == null) 
+                 {  
                      parent.left = newNode;  
                      return;  
                  }  
-             }  
-             
-             else {  
+             }             
+             else 
+             {  
                  current = current.right;  
-                 if(current == null) {  
+                 if(current == null) 
+                 {  
                      parent.right = newNode;  
                      return;  
                  }  
@@ -42,14 +47,16 @@ public class MyBinaryTree {
      }  
  }
  
-public void inorder(Node node) {  
-	  
-    //Check whether tree is empty  
-    if(root == null){  
-        System.out.println("Tree is empty");  
+public void inorder(Node node) 
+  {  
+	   
+    if(root == null)
+    {  
+        System.out.println("The Tree is empty");  
         return;  
      }  
-    else {  
+    else 
+    {  
 
         if(node.left!= null)  
             inorder(node.left);  
@@ -58,5 +65,5 @@ public void inorder(Node node) {
             inorder(node.right);  
 
     }  
- }
+  }
 }
