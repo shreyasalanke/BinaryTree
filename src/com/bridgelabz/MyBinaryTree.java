@@ -4,16 +4,13 @@ import java.util.*;
 import java.io.*;
 
 public class MyBinaryTree 
-{
- Node root;
+  {
+    Node root;
  
- public void insert(int data) 
+public void insert(int data) 
  {  
-    
-     Node newNode = new Node(data);  
-
-       
-     if(root == null)
+      Node newNode = new Node(data);  
+      if(root == null)
        {  
          root = newNode;  
          return;  
@@ -21,7 +18,6 @@ public class MyBinaryTree
      else
        {     
          Node current = root, parent = null;  
-
          while(true) 
          {              
              parent = current;  
